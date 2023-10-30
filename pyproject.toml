@@ -9,6 +9,13 @@ license = "MIT"
 python = "^3.10"
 Django = "^4.2.6"
 psycopg2 = "^2.9.9"
+python-dotenv = "^1.0.0"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.3.0"
+drf-yasg = "^1.21.7"
+celery = "^5.3.4"
+coverage = "^7.3.2"
+django-cors-headers = "^4.3.0"
 
 [tool.poetry.dev-dependencies]
 

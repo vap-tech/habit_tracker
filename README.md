@@ -56,7 +56,14 @@
 
 ### Документация:
 Для фронтенд-разработчиков настроен вывод документации.
+http://127.0.0.1:8000/docs/redoc/ для redoc
+http://127.0.0.1:8000/docs/swagger/ для swagger
 
 
 ### Лицензия:
 Проект распространяется на условиях MIT лицензии.
+
+
+### Тестирование:
+coverage run --source='.' manage.py test Users
+coverage report или coverage report > coverage.txt
