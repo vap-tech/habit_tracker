@@ -16,6 +16,7 @@ drf-yasg = "^1.21.7"
 celery = "^5.3.4"
 coverage = "^7.3.2"
 django-cors-headers = "^4.3.0"
+redis = "^5.0.1"
 
 [tool.poetry.dev-dependencies]
 
