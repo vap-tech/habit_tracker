@@ -169,6 +169,9 @@ CELERY_TIMEZONE = os.getenv('TIMEZONE')
 # Флаг отслеживания выполнения задач
 CELERY_TASK_TRACK_STARTED = True
 
+# Фиксим варнинги (переподключение во время запуска)
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
