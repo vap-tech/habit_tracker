@@ -2,3 +2,4 @@
 poetry.lock
 .env
 .coverage
+celerybeat-schedule
