@@ -10,7 +10,6 @@ class HabitSerializer(serializers.ModelSerializer):
         model = Habit
         fields = (
             'name',
-            'owner',
             'place',
             'time',
             'action',

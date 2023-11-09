@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
+    'django_celery_beat',
 
     'habit',
     'users',
@@ -174,6 +175,9 @@ CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
+
+# schedulers
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 # CORS
 # Адреса фронтенд-сервера

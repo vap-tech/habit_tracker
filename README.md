@@ -62,8 +62,16 @@ http://127.0.0.1:8000/docs/swagger/ для swagger
 
 ### Лицензия:
 Проект распространяется на условиях MIT лицензии.
+Смотрите файл LICENSE.
 
 
 ### Тестирование:
-coverage run --source='.' manage.py test Users
-coverage report или coverage report > coverage.txt
++ coverage run --source='.' manage.py test users тест user
++ coverage run --source='.' manage.py test habit тест habit
++ coverage run --source='.' manage.py test всё вместе 
++ coverage report или coverage report > coverage.txt для вывода результатов
+
+
+### Фикстуры:
+ ./manage.py loaddata data.json для создания периодической 
+ задачи отправки уведомлений в telegram 

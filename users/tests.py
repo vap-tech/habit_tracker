@@ -15,7 +15,8 @@ class UserAPITest(APITestCase):
             'last_name': 'Ple',
             'patronymic': 'Lost',
             'phone': '+7(999)567-57-00',
-            'city': 'Vrn'
+            'city': 'Vrn',
+            'chat_id': '34453556'
         }
         response = self.client.post('/user/create-user/', data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)

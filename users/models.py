@@ -12,6 +12,7 @@ class User(AbstractUser):
     patronymic = models.CharField(max_length=35, verbose_name='отчество', **NULLABLE)
     phone = models.CharField(max_length=35, verbose_name='телефон', **NULLABLE)
     city = models.CharField(max_length=50, verbose_name='город', **NULLABLE)
+    chat_id = models.CharField(max_length=50, verbose_name='telegram chat_id', **NULLABLE)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

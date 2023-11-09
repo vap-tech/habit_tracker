@@ -12,8 +12,9 @@ class HabitValidator:
             raise ValidationError("Одновременный выбор связанной привычки и указания вознаграждения недопустим.")
 
         # Время выполнения должно быть не больше 120 секунд.
-        if habit.get('time_to_complete') > 120:
-            raise ValidationError("Время выполнения должно быть не больше 120 секунд.")
+        if habit.get('time_to_complete'):
+            if habit.get('time_to_complete') > 120:
+                raise ValidationError("Время выполнения должно быть не больше 120 секунд.")
 
         # В связанные привычки могут попадать только привычки с признаком приятной привычки.
         if habit.get('related'):
@@ -26,5 +27,6 @@ class HabitValidator:
                 raise ValidationError("У приятной привычки не может быть вознаграждения или связанной привычки.")
 
         # Нельзя выполнять привычку реже, чем 1 раз в 7 дней.
-        if habit.get('period') > 7:
-            raise ValidationError("Нельзя выполнять привычку реже, чем 1 раз в 7 дней.")
+        if habit.get('period'):
+            if habit.get('period') > 7:
+                raise ValidationError("Нельзя выполнять привычку реже, чем 1 раз в 7 дней.")
