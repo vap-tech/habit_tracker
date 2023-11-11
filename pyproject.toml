@@ -19,6 +19,7 @@ django-cors-headers = "^4.3.0"
 redis = "^5.0.1"
 requests = "^2.31.0"
 django-celery-beat = "^2.5.0"
+flake8 = "^6.1.0"
 
 [tool.poetry.dev-dependencies]
 
