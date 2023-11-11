@@ -75,3 +75,8 @@
 ### Фикстуры:
  ./manage.py loaddata data.json для создания периодической 
  задачи отправки уведомлений в telegram 
+ 
+
+### Docker:
++ sudo docker compose build для сборки проекта
++ sudo docker compose up для запуска
